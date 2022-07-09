@@ -9,6 +9,6 @@ urlpatterns = [
     path('rating', views.rating_views, name='rating'),  # localhost:8000/tasks/rating
     path('<str:status>', views.get_all_tasks_by_status),  # localhost:8000/tasks/all/
     path('detail/<int:task_id>', views.get_task_detail),  # localhost:8000/tasks/detail/13
-    path('/tasks/member',views.members) #localhost:8000/tasks/members
+    path('tasks/member',views.members) #localhost:8000/tasks/members
 	# path('путь', views.функция, имя_запроса)
 ]
