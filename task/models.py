@@ -46,10 +46,11 @@ class Comment(models.Model):
 	task = models.ForeignKey(Task, on_delete=models.CASCADE)
 	created_at = models.DateTimeField(auto_now_add=True)
 
-
+#
 class Members(models.Model):
 	id = models.AutoField(primary_key=True)
 	name=models.CharField(max_length=24, default='Enter your name ->')
 	phone=models.CharField(max_length=15)
 	email=models.TextField(max_length=56)
 	created_at=models.DateTimeField(auto_now_add=True)
+
