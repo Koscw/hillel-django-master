@@ -12,3 +12,4 @@ urlpatterns = [
     path('/tasks/member',views.members) #localhost:8000/tasks/members
 	# path('путь', views.функция, имя_запроса)
 ]
+ 
